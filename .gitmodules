@@ -1,5 +1,0 @@
-[submodule "app/src/main/assets/sub-lib"]
-	path = app/src/main/assets/sub-lib
-	url = https://github.com/cOdehOng-dev/json_info.git
-# 	branch = develop
-	branch = main
