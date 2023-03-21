@@ -1,0 +1,3 @@
+[submodule "sub-lib"]
+	path = sub-lib
+	url = https://github.com/cOdehOng-dev/json_info.git
