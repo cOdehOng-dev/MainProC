@@ -25,27 +25,15 @@ class MainActivity : AppCompatActivity() {
 //
 
         runCatching {
-//            val filePath = file1.absolutePath
-            val ff = filesDir.path
-            Log.d("TAG", "test here 1 ${ff}")
-            val path: String = getFilesDir().getAbsolutePath()
-            val file1 = File(path + "/json_info.json")
-            val length = file1.length().toInt()
-
-            val bytes = ByteArray(length)
-
-            val `in` = FileInputStream(file1)
-            try {
-                `in`.read(bytes)
-            } finally {
-                `in`.close()
-            }
-
-            val contents = String(bytes)
-            Log.d("TAG", "test here 2 = ${contents}")
+            val ssss = getJsonFile(this, "sub-lib/json_info.json", JsonDataTest::class.java) as JsonDataTest
+//            val ssss = getAssetJsonData(this, "sub-lib/json_info.json")
+//            val contents = String(bytes)
+            Log.d("TAG", "test here 2 = ${ssss.version}")
         }.onFailure {
             Log.d("TAG", "test here error :: ${it}")
         }
+
+
 
 
     }
