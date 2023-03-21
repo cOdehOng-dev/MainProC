@@ -1,4 +1,0 @@
-[submodule "json_info"]
-	path = json_info
-	url = https://github.com/cOdehOng-dev/json_info.git
-	branch = main
